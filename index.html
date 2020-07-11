@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Giphy API</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript"
+        src="..\JS\main.js"></script>
+    <link rel="stylesheet" type="text/css"
+        href="..\Style\styles.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a name="top"> Giphy API </a></li>
+            <li> <a href="https://www.w3schools.com/">About</a></li>
+            <li> <a href="https://www.google.com/">Contact</a></li>
+        </ul>
+    </nav>
+    <form id="info">
+        <label for="GIF OR STICKER"> Select to search for GIF or Stickers! </label> <br>
+        <input type='radio' id='choice' name='url' value='https://api.giphy.com/v1/gifs/search?api_key=' checked='checked'>
+        <label for="GIF">GIF</label>
+        <input type='radio' id='choice' name='url' value='https://api.giphy.com/v1/stickers/search?api_key='>
+        <label for="Sticker">Sticker</label> <br> <br>
+        <label for="cars">Choose a rating:</label>
+        <select name="Rating" id="rating" form="Rating">
+            <option value="g">G</option>
+            <option value="pg">PG</option>
+            <option value="pg-13">PG-13</option>
+            <option value="r">R</option>
+        </select> <br> <br>
+        <div id="container">
+        <label for="limit"> Choose a maximum number of hits:</label>
+        <div id="value">Value: <div id="show"></div></div>
+        <input type="range" id="limit" name="vol" min="0" max="50">
+        <br> <br>
+        </div>
+        <label for="search"></label>
+        <input type="text" id="q" name="search" placeholder="Search..."> 
+        <input type="button" value="Submit" id="search" value="Search">
+    </form>
+    <br>
+    <span id="status"></span><br><br>
+    <span id="output"></span>
+    <span id="bottom"></span>
+</body>
+
+</html>

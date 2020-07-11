@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+body {
+  background-color: #595959;
+  font-family: "righteous","cursive","chalkduster";
+}
+
+nav {
+  overflow: hidden;
+  background-color: #333333;
+}
+
+nav li {
+  float: left;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+form {
+  text-align: center;
+  border-style: dashed;
+  border-radius: 20px;
+  border-color: #e2492f;
+  border-width: 5px;
+  padding: 1%;
+  margin-top: 1%;
+}
+
+#status {
+  color: #009B77;
+  display: block;
+  text-align: center;
+  font-size: 2em;
+}
+
+#output {
+  margin: 0 auto;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 1200px;
+  display: -ms-inline-grid;
+  display: inline-grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  text-align: center;
+}
+
+.gif-box {
+  margin: 0.5rem;
+  border-style: solid;
+  border-color: #398AD7;
+  border-width: 5px;
+  height: auto;
+  width: auto;
+}
+
+.gif-box img {
+  display: block;
+}
+
+#bottom a {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 600px) {
+  nav li {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  #output {
+    display: -ms-inline-grid;
+    display: inline-grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    text-align: left;
+  }
+  #output .gif-box {
+    border-style: none;
+  }
+  #output .gif-box img {
+    border-style: solid;
+    border-color: #398AD7;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
